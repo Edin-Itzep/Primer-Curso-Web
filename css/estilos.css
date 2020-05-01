@@ -60,3 +60,14 @@ h1{
 
     height: 300px;
 }
+
+.header {
+
+    background-color: #1b2127 ;
+    color: white;
+}
+
+.header a {
+color: white;
+text-decoration: none;
+}
