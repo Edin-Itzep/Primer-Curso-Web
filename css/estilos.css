@@ -36,9 +36,39 @@ h1{
     letter-spacing: -.2px; /*espaciado entre cada letra*/
     /*text-transform: uppercase; cambiar el tipo, ejemplo mayusculas, minusculas, oracion*/
     /*text-decoration: dashed; tipo de decorado en ete ejemplo subrayado*/
-    font-style: italic ;
-    text-transform: capitalize;
-    text-decoration: underline;
+}
+
+/* UNA FORMA DE LLAMAR A LA FUNCION O BIEN SE PUEDE HACER -----
 
 
+.project div{
+    width: 500px;
+} 
+*/
+
+/* sino quiero ser muy directo le puedo decir --------*/
+
+.project-details{
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
+
+.hero {
+
+    height: 300px
+
+}
+
+.header {
+
+    background-color: #1b2127 ;
+    color: white;
+}
+
+.header a {
+color: white;
+text-decoration: none;
 }
