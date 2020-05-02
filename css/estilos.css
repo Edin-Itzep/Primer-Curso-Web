@@ -8,9 +8,32 @@ background: red;
 color: fuente de letra
 */
 
-header 
+/*header 
 {
     background: pink;  
     color: red
+}*/
+
+body{ 
+    font-family: 'Source Sans Pro', sans-serif; /*tipo de fuente para toda la pagina*/
+    font-weight: normal; /*ancho de fuente o negrita*/
+    /*font-style: normal; aqui le podemos dar un efecto de cursiva o algo mas*/
+
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif; /*tipo de letra para todas las h */
+}
+
+h1{
+    font-size: 40px; /*tamaño de la fuente   */
+    line-height: 150% ; /*ancho del espacio entre texto */
+    letter-spacing: -.2px; /*espaciado entre cada letra*/
+    /*text-transform: uppercase; cambiar el tipo, ejemplo mayusculas, minusculas, oracion*/
+    /*text-decoration: dashed; tipo de decorado en ete ejemplo subrayado*/
+}
