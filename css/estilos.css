@@ -36,4 +36,9 @@ h1{
     letter-spacing: -.2px; /*espaciado entre cada letra*/
     /*text-transform: uppercase; cambiar el tipo, ejemplo mayusculas, minusculas, oracion*/
     /*text-decoration: dashed; tipo de decorado en ete ejemplo subrayado*/
+    font-style: italic ;
+    text-transform: capitalize;
+    text-decoration: underline;
+
+
 }
