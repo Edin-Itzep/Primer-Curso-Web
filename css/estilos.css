@@ -62,6 +62,11 @@ h1 strong{
 
 /* sino quiero ser muy directo le puedo decir --------*/
 
+.portfolio
+{
+    background: #fafafa;
+    
+}
 
 .project 
 {
@@ -85,13 +90,18 @@ border-top-style: solid; -unicamente el estilo a el borde superior
 border: 1px solid gray; /*me asigna el borde a la pagina completa sin especificar*/
 border-radius: 10px;
 
-margin-bottom: 10px;
+margin: 10px;
+margin-bottom: 15px;
 /*
 margin-top: 0px;
 margin-right: 0px;
 margin-left: 0px;
 le daremos unicamente margen al espaciado entre cada proyecto
 */ 
+
+padding: 20px;
+
+background: white;
 }
 
 .project-details{
@@ -123,4 +133,25 @@ le daremos unicamente margen al espaciado entre cada proyecto
 .header a {
 color: white;
 text-decoration: none;
+}
+
+.flexbox{
+
+display: flex;
+flex-shrink: 0; /*esta propiedad nos quita la flexibilidad de los cuadros para que no se encojan*/
+/*flex-wrap: nowrap; este elemento no permite que caigan los cuadros 
+osea que los seguira mstrando en el largo de la pagina web*/
+flex-wrap: wrap; /*esto nos permite en la pagina cargar los elemento en la siguietne fila sino caben*/
+/*flex-direction: column;  queremos que nuestros cuadros esten en columna
+flex-direction: row; queremos que nuestros cuadros esten en filas
+*/
+
+}
+
+.box{
+
+    width: 200px; 
+    height: 200px;
+    border: 1px solid red;
+    margin: 10px;
 }
