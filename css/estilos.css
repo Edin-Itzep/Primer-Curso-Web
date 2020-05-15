@@ -24,7 +24,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif; /*tipo de fuente para toda la pagina*/
     font-weight: normal; /*ancho de fuente o negrita*/
     /*font-style: normal; aqui le podemos dar un efecto de cursiva o algo mas*/
-
+    margin: 0;
 }
 
 h1,
@@ -41,11 +41,13 @@ h1{
     line-height: 150% ; /*ancho del espacio entre texto */
     letter-spacing: -.2px; /*espaciado entre cada letra*/
     color: white;
-    margin: 100px 150px 70px 30px;
+   /* margin: 100px 150px 70px 30px;*/
 
     /*text-transform: uppercase; cambiar el tipo, ejemplo mayusculas, minusculas, oracion*/
     /*text-decoration: dashed; tipo de decorado en ete ejemplo subrayado*/
+    margin: 0;
 }
+
 
 h1 strong{
     color: #026fff;
@@ -62,14 +64,25 @@ h1 strong{
 
 /* sino quiero ser muy directo le puedo decir --------*/
 
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
 .portfolio
 {
     background: #fafafa;
+    padding: 20px;
     
 }
 
 .project 
 {
+
     /* A este se le puede agregar un tamaño, tipo, estilo*/
 /*border-top: 10px solid whitesmoke;
 border-left: 10px solid  black;
@@ -89,9 +102,10 @@ border-top-style: solid; -unicamente el estilo a el borde superior
 
 border: 1px solid gray; /*me asigna el borde a la pagina completa sin especificar*/
 border-radius: 10px;
-
-margin: 10px;
 margin-bottom: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
 /*
 margin-top: 0px;
 margin-right: 0px;
@@ -102,6 +116,27 @@ le daremos unicamente margen al espaciado entre cada proyecto
 padding: 20px;
 
 background: white;
+
+}
+
+
+.project-title{
+font-size: 30px;
+margin-top: 0;
+margin-bottom: 10px;
+}
+.project-course, 
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .project-details{
@@ -110,6 +145,7 @@ background: white;
 
 .project-imageContainer {
     width: 500px;
+
 }
 
 .hero {
@@ -120,6 +156,8 @@ background: white;
     background-repeat: no-repeat; /*si una imagen es pequeña se repite en toda la pagina con esta funcion no lo hara*/
     background-position-x: right; /* alineamos la imagen a la derecha*/
     background-color: #1b2127 ;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -128,30 +166,93 @@ background: white;
 
     background-color: #1b2127 ;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
 }
+
+.menu{
+
+    height: inherit;
+}
+
+
+.header ol{
+
+    display: flex;
+    height: inherit;
+
+}
+
+.header ol li{
+    height: inherit;
+}
+
 
 .header a {
 color: white;
 text-decoration: none;
+height: inherit;
+display: flex;
+align-items: center;
+padding: 0 10px;
 }
 
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+
+    margin: 0;
+}
+
+
+/*
 .flexbox{
 
 display: flex;
 flex-shrink: 0; /*esta propiedad nos quita la flexibilidad de los cuadros para que no se encojan*/
 /*flex-wrap: nowrap; este elemento no permite que caigan los cuadros 
 osea que los seguira mstrando en el largo de la pagina web*/
-flex-wrap: wrap; /*esto nos permite en la pagina cargar los elemento en la siguietne fila sino caben*/
+/*flex-wrap: wrap; esto nos permite en la pagina cargar los elemento en la siguietne fila sino caben*/
 /*flex-direction: column;  queremos que nuestros cuadros esten en columna
 flex-direction: row; queremos que nuestros cuadros esten en filas
-*/
+
 
 }
 
 .box{
 
-    width: 200px; 
-    height: 200px;
+    width: 50px; 
+    height: 50px;
     border: 1px solid red;
     margin: 10px;
+}
+
+*/
+
+.footer{
+
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.footer img{
+
+vertical-align: middle;
+
+}
+
+.footer a{
+
+    color: white;
 }
