@@ -272,7 +272,7 @@ margin-left: 20px;
     width: 480px;
     flex-shrink: 0;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /*Se utiliza para que el objeto se mantenga visible en su totalidad lanzado al fondo*/
     background: #f4fbff;
 
 
@@ -305,4 +305,74 @@ margin-left: 20px;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.contact {
+
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+
+
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+   
+}
+
+.social-link.twitter {
+
+    background-image: url('../imagenes/twitter.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.facebook {
+
+    background-image: url('../imagenes/facebook.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.github {
+
+    background-image: url('../imagenes/github.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.instagram {
+
+    background-image: url('../imagenes/instagram.svg');
+    background-size: 50px 50px;
+}
+
+.form-email input {
+
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 20px 5px 25px ;
+    background-image: url('../imagenes/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
 }
