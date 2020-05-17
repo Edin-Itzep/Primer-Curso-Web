@@ -22,9 +22,10 @@ celeste = #026fff
 */
 body{ 
     font-family: 'Source Sans Pro', sans-serif; /*tipo de fuente para toda la pagina*/
-    font-weight: normal; /*ancho de fuente o negrita*/
+  /*  font-weight: normal; /*ancho de fuente o negrita*/
     /*font-style: normal; aqui le podemos dar un efecto de cursiva o algo mas*/
     margin: 0;
+;
 }
 
 h1,
@@ -34,6 +35,7 @@ h4,
 h5,
 h6{
     font-family: 'Fjalla One', sans-serif; /*tipo de letra para todas las h */
+    font-weight: normal;
 }
 
 h1{
@@ -73,6 +75,7 @@ h2{
     font-size: 24px;
     margin-bottom: 40px;
 }
+
 .portfolio
 {
     background: #fafafa;
@@ -151,13 +154,20 @@ margin-bottom: 10px;
 .hero {
 
     height: 300px;
-    background-image: url('../imagenes/hero.jpg'); /*me sirve para colocar una imagen en el hero o cabecera*/
-    background-size: 500px 300px;/* tamaño de la imagen*/
-    background-repeat: no-repeat; /*si una imagen es pequeña se repite en toda la pagina con esta funcion no lo hara*/
-    background-position-x: right; /* alineamos la imagen a la derecha*/
+    /*background-image: url('../imagenes/hero.jpg'); me sirve para colocar una imagen en el hero o cabecera*/
+    /*background-size: 500px 300px;/* tamaño de la imagen*/
+    /*background-repeat: no-repeat; /*si una imagen es pequeña se repite en toda la pagina con esta funcion no lo hara*/
+    /* background-position-x: right; /* alineamos la imagen a la derecha*/
     background-color: #1b2127 ;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-image {
+    object-fit: cover;
+    
 }
 
 
@@ -168,7 +178,7 @@ margin-bottom: 10px;
     color: white;
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 70px;
     align-items: center;
 }
 
@@ -212,17 +222,17 @@ figure{
 }
 
 
-/*
+
 .flexbox{
 
 display: flex;
 flex-shrink: 0; /*esta propiedad nos quita la flexibilidad de los cuadros para que no se encojan*/
 /*flex-wrap: nowrap; este elemento no permite que caigan los cuadros 
 osea que los seguira mstrando en el largo de la pagina web*/
-/*flex-wrap: wrap; esto nos permite en la pagina cargar los elemento en la siguietne fila sino caben*/
+flex-wrap: wrap; /*esto nos permite en la pagina cargar los elemento en la siguietne fila sino caben*/
 /*flex-direction: column;  queremos que nuestros cuadros esten en columna
 flex-direction: row; queremos que nuestros cuadros esten en filas
-
+*/
 
 }
 
@@ -260,6 +270,7 @@ vertical-align: middle;
 
 .event-list{
     display: flex;
+    flex-wrap: wrap;
 
 }
 .event-list-title{
@@ -281,6 +292,7 @@ margin-left: 20px;
     width: 480px;
     height: 200px;
     object-fit: cover;
+;
     
      
 }
@@ -375,4 +387,15 @@ margin-left: 20px;
     border-radius: 5px;
     width: 100px;
     margin-top: 10px;
+}
+
+.container {
+    border: 1px solid red;
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
