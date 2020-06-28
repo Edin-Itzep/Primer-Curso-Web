@@ -19,9 +19,9 @@
     
     <body>
         
-        <i class="icon-icon-menu">
+        <i class="icon-menu burgerButton" id="burger-menu">
 
-        </i>
+        </i> 
         <header class="header">
          <div class="container">
             <figure class="logo">
@@ -103,7 +103,6 @@
        <div class="container">
             <h2 class="event-list-title">Mas sobre mi experiencia</h2>
         </div>
-
         
         <section id="eventos" class="event-list">
             <div class="container">
@@ -162,8 +161,6 @@
             </div>
         </section>
 
-
-
         <section id="contacto" class="contact">
             <div class="container">
 
@@ -174,15 +171,15 @@
                     <button> Enviar </button>
                 </form>
                 <div>
-                    <a href="https://twitter.com/edin_ci" class="social-link twitter"> <i class="icon-icon-twitter"> </i></a>
-                    <a href="https://facebook.com/edin.ci.3" class="social-link facebook"> <i class="icon-icon-facebook"> </i></a>
-                    <a href="https://github.com/Edin-Itzep" class="social-link github"> <i class="icon-icon-github"> </i></a>
-                    <a href="https://instagram.com/Edy_itzep" class="social-link instagram"> <i class="icon-icon-instagram"> </i></a>
+                    <a href="https://twitter.com/edin_ci" class="social-link twitter"> <i class="icon-twitter"> </i></a>
+                    <a href="https://facebook.com/edin.ci.3" class="social-link facebook"> <i class="icon-facebook"> </i></a>
+                    <a href="https://github.com/Edin-Itzep" class="social-link github"> <i class="icon-github"> </i></a>
+                    <a href="https://instagram.com/Edy_itzep" class="social-link instagram"> <i class="icon-instagram"> </i></a>
                 </div>
             </div>
 
         </section>
-d
+
         <footer class="footer">
             <div class="container" margin= "0px">
                 <div>
@@ -194,5 +191,55 @@ d
             </div>
         
         </footer> 
+        <script>
+            /* console.log("hola mundo "); 
+            console.log(document.querySelector(".menu"));
+            const menu = document.querySelector(".menu");
+            menu.classList.add("is-active"); 
+            
+            solo haremos unas modificaciones al cdigo para jugar con el console log*/
+
+            /* console.log(); */
+            const ipad = window.matchMedia('screen and (max-width: 767px)')
+
+            /* para poder escuchar un evento necesitamos asignarle una propiedad al media y eso lo hacemos
+            igualandolo a una variables */
+
+            ipad.addListener(validation)
+
+
+            function validation(event){
+                if(event.matches){
+                    burgerButton.addEventListener('click', hideShow);
+                }
+                else
+                {
+
+                    burgerButton.removeEventListener('click', hideShow);
+                }
+
+
+            }
+
+            const menu = document.querySelector(".menu");
+           /*  console.log(menu); */
+            const burgerButton = document.querySelector("#burger-menu");
+            /* console.log(burgerButton); */
+            
+            burgerButton.addEventListener('click', hideShow);
+            
+            function hideShow() {
+                if(menu.classList.contains("is-active"))
+                {
+                    menu.classList.remove("is-active");
+                }
+                else{
+                    menu.classList.add("is-active");
+
+                }
+
+
+            }
+        </script>
     </body>
 </html> 

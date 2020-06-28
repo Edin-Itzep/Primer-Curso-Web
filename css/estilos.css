@@ -37,19 +37,19 @@ color: fuente de letra
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-icon-github:before {
+  .icon-github:before {
     content: "\e900";
   }
-  .icon-icon-instagram:before {
+  .icon-instagram:before {
     content: "\e901";
   }
-  .icon-icon-twitter:before {
+  .icon-twitter:before {
     content: "\e903";
   }
-  .icon-icon-facebook:before {
+  .icon-facebook:before {
     content: "\e904";
   }
-  .icon-icon-menu:before {
+  .icon-menu:before {
     content: "\e902";
   }
 
@@ -404,38 +404,41 @@ margin-left: 20px;
     margin: 0 10px;
     background-size: 50px 50px;
     text-decoration: none;
-}|
+}
 
 
 
-.icon-icon-twitter {
+
+
+
+.icon-twitter {
 
     
+    
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.icon-facebook {
+
     
     color: #fff;
     font-size: 50px;
     text-decoration: none;
 }
 
-.icon-icon-facebook {
-
-    
-    color: #fff;
-    font-size: 50px;
-    text-decoration: none;
-}
-
-.icon-icon-github {
+.icon-github {
 
 
-    color: #fff;
+    color: white;
     font-size: 50px;
     text-decoration: none;}
 
-.icon-icon-instagram {
+.icon-instagram {
 
 
-    color: #fff;
+    color: white;
     font-size: 50px;
     text-decoration: none;
 }
@@ -468,7 +471,7 @@ margin-left: 20px;
    
     max-width:1000px;
      /*codigo para usar todo el ancho*/ 
-    margin: 0px auto;
+    margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
@@ -508,9 +511,31 @@ padding-top: 56.25%;
 background: blue;
 }
 
+.burgerButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgb(0,0,0,0.8);
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+    
+
+
+}
+
+
 
 /*para desktop first, debemos empezar desde el MQ mas grande*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 
     .container {
         padding: 0 1em;
@@ -544,7 +569,7 @@ background: blue;
         right: 0;
         bottom: 0;
        width: 100%;
-       object-fit: cover;
+       
      
     }
 }
@@ -553,25 +578,57 @@ background: blue;
 
     
 
+    .burgerButton{
+        display: block;
+    }
+
     .header{
         display: block;
         height: auto;
     }
 
+    
     .header ol{
         display: block;
     }
 
     .header ol li {
-        height: 40px;
+        height: 50px;
     }
 
     .header a {
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
 
     .header .logo {
         text-align: center;
+    }
+
+    .menu {
+        position: fixed; /* dejamos fijo el menu */
+        background: rgba(145, 201, 61,0.9);/* color y opacidad */
+        z-index: 3; /* dejamos que el elemento este debajo o arriba de algo mas */
+        top: 0;
+        /* left: 0; Tenia un left 0 para toparlo a la pantalla*/
+        width: 100vw;/* 100% visible en la pantalla */
+/*         height: 100vh;
+ */     bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* left: -100px; */
+        left: -100vw;
+        transition: .3s;
+        
+    }
+
+    .menu.is-active {
+
+        left: 0;
     }
 
     .project {
